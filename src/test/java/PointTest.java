@@ -225,5 +225,10 @@ public class PointTest {
     }
 
     @Test
-    public void 
+    public void testComputeArea() throws ShapeException {
+        Point testingPoint=new Point(1,1);
+        double area=testingPoint.computeArea();
+        assertEquals(0,area,0);
+    }
+
 }

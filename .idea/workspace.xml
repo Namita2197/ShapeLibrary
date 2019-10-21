@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02684fc3-29eb-4bee-a63b-55d4d0ad91bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RectangleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +87,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RectangleTest.renderTest">
+  <component name="RunManager" selected="Gradle.PointTest.testComputeArea">
+    <configuration name="PointTest.testComputeArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PointTest.testComputeArea&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RectangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,40 +188,20 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RectangleTest.scale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RectangleTest.scale&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.RectangleTest.scale" />
       <item itemvalue="Gradle.RectangleTest.computeArea" />
       <item itemvalue="Gradle.RectangleTest.checkInvalidConstructor" />
       <item itemvalue="Gradle.RectangleTest" />
       <item itemvalue="Gradle.RectangleTest.renderTest" />
+      <item itemvalue="Gradle.PointTest.testComputeArea" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PointTest.testComputeArea" />
         <item itemvalue="Gradle.RectangleTest.renderTest" />
         <item itemvalue="Gradle.RectangleTest" />
         <item itemvalue="Gradle.RectangleTest.checkInvalidConstructor" />
         <item itemvalue="Gradle.RectangleTest.computeArea" />
-        <item itemvalue="Gradle.RectangleTest.scale" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +218,7 @@
       <workItem from="1571679657270" duration="588000" />
       <workItem from="1571680268058" duration="887000" />
       <workItem from="1571681178147" duration="98000" />
-      <workItem from="1571681290412" duration="12724000" />
+      <workItem from="1571681290412" duration="12998000" />
     </task>
     <servers />
   </component>

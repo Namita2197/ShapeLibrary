@@ -223,4 +223,7 @@ public class PointTest {
         assertEquals(p1.getX(), p2.getX(), 0);
         assertEquals(p1.getY(), p2.getY(), 0);
     }
+
+    @Test
+    public void 
 }

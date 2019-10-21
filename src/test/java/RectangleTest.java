@@ -1,5 +1,10 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class RectangleTest {
@@ -86,5 +91,24 @@ public class RectangleTest {
         Rectangle testArea= new Rectangle(corner1,corner2,corner3,corner4);
         double area=testArea.computeArea();
         assertEquals(50,area,0);
+    }
+
+    @Test
+    public void renderTest() throws Exception {
+
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(20, 10);
+        Point corner3= new Point(10, 5);
+        Point corner4 = new Point(20, 5);
+        Rectangle rectangle = new Rectangle(corner1,corner2,corner3,corner4);
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0,0,100,100);
+        graphics.setColor(Color.BLACK);
+        rectangle.renderRectangle(graphics);
+
+        ImageIO.write(bufferedImage, "png", new File("output/Rectangle.png"));
     }
 }

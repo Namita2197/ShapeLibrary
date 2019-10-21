@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Rectangle {
     private Point corner1;
     private Point corner2;
@@ -78,8 +80,14 @@ public class Rectangle {
         assert Math.round(Math.sqrt(Math.pow(lengthLine3, 2) + Math.pow(lengthLine4, 2))) == Math.round(lengthHypotenuse);
     }
 
-    public void render(){
-        
+    public void renderRectangle(Graphics2D graphics) throws ShapeException {
+        int x = (int)getCorner3().getX();
+        int y = (int)getCorner3().getY();
+        Line length = new Line(getCorner3(),getCorner4());
+        Line breadth = new Line(getCorner1(),getCorner3());
+        int lengthValue=(int)length.computeLength();
+        int breadthValue = (int)breadth.computeLength();
+        graphics.drawRect(x, y, lengthValue, breadthValue);
     }
 
 }

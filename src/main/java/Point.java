@@ -72,6 +72,10 @@ public class Point {
         moveY(deltaY);
     }
 
+    public double computeArea(){
+        return 0;
+    }
+
     /**
      * Copy the point
      * @return                  A new point with same x and y locations

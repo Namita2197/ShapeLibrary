@@ -87,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RectangleTest.constructor1Test">
+  <component name="RunManager" selected="Gradle.RectangleTest.scale">
     <configuration name="LineTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -114,6 +114,46 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;RectangleTest.constructor1Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RectangleTest.move" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;RectangleTest.move&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RectangleTest.scale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;RectangleTest.scale&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -158,9 +198,13 @@
       <item itemvalue="Gradle.LineTest" />
       <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
       <item itemvalue="Gradle.RectangleTest.constructor1Test" />
+      <item itemvalue="Gradle.RectangleTest.move" />
+      <item itemvalue="Gradle.RectangleTest.scale" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RectangleTest.scale" />
+        <item itemvalue="Gradle.RectangleTest.move" />
         <item itemvalue="Gradle.RectangleTest.constructor1Test" />
         <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
         <item itemvalue="Gradle.LineTest" />
@@ -180,7 +224,7 @@
       <workItem from="1571679657270" duration="588000" />
       <workItem from="1571680268058" duration="887000" />
       <workItem from="1571681178147" duration="98000" />
-      <workItem from="1571681290412" duration="8360000" />
+      <workItem from="1571681290412" duration="9785000" />
     </task>
     <servers />
   </component>

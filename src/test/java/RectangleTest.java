@@ -33,31 +33,48 @@ public class RectangleTest {
     }
 
     @Test
-    public void getCorner1() {
+    public void move() throws ShapeException {
+        Point corner1 =new Point(10,10);
+        Point corner2 =new Point(20,10);
+        Point corner3 =new Point(10,0);
+        Point corner4 =new Point(20,0);
+        Rectangle testRectangle=new Rectangle(corner1,corner2,corner3,corner4);
+        testRectangle.move(10,10);
+        assertEquals(20,testRectangle.getCorner1().getX(),0);
+        assertEquals(20,testRectangle.getCorner1().getY(),0);
+        assertEquals(30,testRectangle.getCorner2().getX(),0);
+        assertEquals(20,testRectangle.getCorner2().getY(),0);
+        assertEquals(20,testRectangle.getCorner3().getX(),0);
+        assertEquals(10,testRectangle.getCorner3().getY(),0);
+        assertEquals(30,testRectangle.getCorner4().getX(),0);
+        assertEquals(10,testRectangle.getCorner4().getY(),0);
     }
 
     @Test
-    public void getCorner2() {
-    }
-
-    @Test
-    public void getCorner3() {
-    }
-
-    @Test
-    public void getCorner4() {
-    }
-
-    @Test
-    public void move() {
-    }
-
-    @Test
-    public void scale() {
+    public void scale() throws ShapeException {
+        Point corner1 =new Point(10,15);
+        Point corner2 =new Point(20,15);
+        Point corner3 =new Point(10,10);
+        Point corner4 =new Point(20,10);
+        Rectangle testScaling =new Rectangle(corner1,corner2,corner3,corner4);
+        testScaling.scale(2);
+        assertEquals(10,testScaling.getCorner1().getX(),0);
+        assertEquals(30,testScaling.getCorner1().getY(),0);
+        assertEquals(40,testScaling.getCorner2().getX(),0);
+        assertEquals(30,testScaling.getCorner2().getY(),0);
+        assertEquals(10,testScaling.getCorner3().getX(),0);
+        assertEquals(10,testScaling.getCorner3().getY(),0);
+        assertEquals(40,testScaling.getCorner4().getX(),0);
+        assertEquals(10,testScaling.getCorner4().getY(),0);
     }
 
     @Test
     public void computeArea() {
+        Point corner1 =new Point(10,15);
+        Point corner2 =new Point(20,15);
+        Point corner3 =new Point(10,10);
+        Point corner4 =new Point(20,10);
+        Rectangle testArea= new Rectangle(cor)
     }
 
     @Test

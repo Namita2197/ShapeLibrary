@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RectangleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-21T23:48:14" hostname="Namita" time="0.091">
+  <properties/>
+  <testcase name="renderTest" classname="RectangleTest" time="0.091"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

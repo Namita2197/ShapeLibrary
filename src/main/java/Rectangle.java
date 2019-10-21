@@ -81,13 +81,23 @@ public class Rectangle {
     }
 
     public void renderRectangle(Graphics2D graphics) throws ShapeException {
-        int x = (int)getCorner3().getX();
-        int y = (int)getCorner3().getY();
-        Line length = new Line(getCorner3(),getCorner4());
-        Line breadth = new Line(getCorner1(),getCorner3());
-        int lengthValue=(int)length.computeLength();
-        int breadthValue = (int)breadth.computeLength();
-        graphics.drawRect(x, y, lengthValue, breadthValue);
+
+        int[] x = new int[5];
+        int[] y = new int[5];
+
+        x[0] = (int)getCorner1().getX();
+        x[1] = (int)getCorner2().getX();
+        x[2] = (int)getCorner4().getX();
+        x[3] = (int)getCorner3().getX();
+        x[4]=x[0];
+
+        y[0] = (int)getCorner1().getY();
+        y[1] = (int)getCorner2().getY();
+        y[2] = (int)getCorner4().getY();
+        y[3] = (int)getCorner3().getY();
+        y[4]=y[0];
+
+        graphics.drawPolyline(x, y, 5);
     }
 
 }

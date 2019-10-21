@@ -1,5 +1,11 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class PointTest {
@@ -229,6 +235,20 @@ public class PointTest {
         Point testingPoint=new Point(1,1);
         double area=testingPoint.computeArea();
         assertEquals(0,area,0);
+    }
+
+    @Test
+    public void testRender() throws ShapeException, IOException {
+        Point point = new Point(10, 10);
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0,0,100,100);
+        graphics.setColor(Color.BLACK);
+        point.renderPoint(graphics);
+
+        ImageIO.write(bufferedImage, "png", new File("output/Point.png"));
     }
 
 }

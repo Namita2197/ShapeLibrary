@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * Point
  *
@@ -74,6 +76,12 @@ public class Point {
 
     public double computeArea(){
         return 0;
+    }
+
+    public void renderPoint(Graphics2D graphics) throws ShapeException {
+        int x = (int)getX();
+        int y = (int)getY();
+        graphics.drawLine(x,y,x,y);
     }
 
     /**

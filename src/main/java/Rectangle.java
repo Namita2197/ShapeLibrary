@@ -78,4 +78,8 @@ public class Rectangle {
         assert Math.round(Math.sqrt(Math.pow(lengthLine3, 2) + Math.pow(lengthLine4, 2))) == Math.round(lengthHypotenuse);
     }
 
+    public void render(){
+        
+    }
+
 }

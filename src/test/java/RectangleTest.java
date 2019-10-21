@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 public class RectangleTest {
     @Test
-    public void constructor1Test() throws ShapeException {
+    public void constructorTest() throws ShapeException {
         Rectangle testingRectangle1=new Rectangle(0,5,5,5,0,0,5,0);
         assertEquals(0,testingRectangle1.getCorner1().getX(),0);
         assertEquals(5,testingRectangle1.getCorner1().getY(),0);
@@ -29,7 +29,16 @@ public class RectangleTest {
         assertEquals(0,testingRectangle2.getCorner3().getY(),0);
         assertEquals(5,testingRectangle2.getCorner4().getX(),0);
         assertEquals(0,testingRectangle2.getCorner4().getY(),0);
+    }
 
+    @Test(expected = ShapeException.class)
+    public void checkInvalidConstructor() throws ShapeException {
+        Point corner1 =new Point(10,15);
+        Point corner2 =new Point(20,15);
+        Point corner3 =new Point(10,10);
+        Point corner4 =new Point(20,10);
+        new Rectangle(null,corner2,corner3,corner4);
+        new Rectangle(corner1,null,corner3,null);
     }
 
     @Test
@@ -69,15 +78,13 @@ public class RectangleTest {
     }
 
     @Test
-    public void computeArea() {
+    public void computeArea() throws ShapeException {
         Point corner1 =new Point(10,15);
         Point corner2 =new Point(20,15);
         Point corner3 =new Point(10,10);
         Point corner4 =new Point(20,10);
-        Rectangle testArea= new Rectangle(cor)
-    }
-
-    @Test
-    public void checkRectangleValidity() {
+        Rectangle testArea= new Rectangle(corner1,corner2,corner3,corner4);
+        double area=testArea.computeArea();
+        assertEquals(50,area,0);
     }
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02684fc3-29eb-4bee-a63b-55d4d0ad91bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RectangleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,13 +88,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RectangleTest.scale">
-    <configuration name="LineTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RectangleTest">
+    <configuration name="RectangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;LineTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;RectangleTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -108,12 +109,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RectangleTest.constructor1Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RectangleTest.checkInvalidConstructor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RectangleTest.constructor1Test&quot;" />
+        <option name="scriptParameters" value="--tests &quot;RectangleTest.checkInvalidConstructor&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RectangleTest.computeArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;RectangleTest.computeArea&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -168,46 +189,20 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'ShapeLibrary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <extension name="coverage" track_test_folders="true" runner="emma">
-        <pattern>
-          <option name="PATTERN" value="*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.LineTest" />
-      <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
-      <item itemvalue="Gradle.RectangleTest.constructor1Test" />
       <item itemvalue="Gradle.RectangleTest.move" />
       <item itemvalue="Gradle.RectangleTest.scale" />
+      <item itemvalue="Gradle.RectangleTest.computeArea" />
+      <item itemvalue="Gradle.RectangleTest.checkInvalidConstructor" />
+      <item itemvalue="Gradle.RectangleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RectangleTest" />
+        <item itemvalue="Gradle.RectangleTest.checkInvalidConstructor" />
+        <item itemvalue="Gradle.RectangleTest.computeArea" />
         <item itemvalue="Gradle.RectangleTest.scale" />
         <item itemvalue="Gradle.RectangleTest.move" />
-        <item itemvalue="Gradle.RectangleTest.constructor1Test" />
-        <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
-        <item itemvalue="Gradle.LineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +219,7 @@
       <workItem from="1571679657270" duration="588000" />
       <workItem from="1571680268058" duration="887000" />
       <workItem from="1571681178147" duration="98000" />
-      <workItem from="1571681290412" duration="9785000" />
+      <workItem from="1571681290412" duration="10840000" />
     </task>
     <servers />
   </component>

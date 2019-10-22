@@ -77,7 +77,7 @@ public class CompositeTest {
     }
 
     @Test
-    public void move() throws Exception {
+    public void moveTesting() throws Exception {
         Point p1 =new Point(0,5);
         Point p2 =new Point(5,5);
         Point p3 =new Point(0,0);
@@ -101,12 +101,6 @@ public class CompositeTest {
 
         compositeShape.move(moveX, moveY);
 
-//        p1.move(moveX, moveY);
-//        line.move(moveX, moveY);
-//        circle.move(moveX, moveY);
-//        triangle.move(moveX, moveY);
-//        rectangle.move(moveX, moveY);
-
         Composite shiftedCompositeShape = new Composite();
         shiftedCompositeShape.appendShape(triangle);
         shiftedCompositeShape.appendShape(rectangle);
@@ -119,53 +113,40 @@ public class CompositeTest {
     }
 
 //    @Test
-//    public void area() throws Exception {
-//        Point p1 = new Point(0, 0);
-//        Point p2 = new Point(40, 0);
-//        Point p3 = new Point(40, 40);
-//        Point p4 = new Point(0, 40);
+//    public void computeAreaTesting() throws Exception {
+//        Point p1 =new Point(0,5);
+//        Point p2 =new Point(5,5);
+//        Point p3 =new Point(0,0);
+//        Point p4 =new Point(5,0);
 //
-//        Point p5 = new Point(40, 60);
-//        Point p6 = new Point(0, 60);
-//
-//        Rectangle rectangle = new Rectangle(p1, p2, p5, p6);
-//        Square square = new Square(p1, p2, p3, p4);
+//        Rectangle rectangle = new Rectangle(p1, p2,p3, p4);
 //        Triangle triangle = new Triangle(p1, p2, p3);
-//        Line line = new Line(p1, p5);
-//        Ellipse ellipse = new Ellipse(100, 100, 50, 40);
-//        Circle circle = new Circle(200, 200, 40);
+//        Line line = new Line(p1, p2);
+//        Circle circle = new Circle(p2, 40);
 //
-//        CompositeShape compositeShape = new CompositeShape();
-//        compositeShape.addShape(triangle);
-//        compositeShape.addShape(rectangle);
-//        compositeShape.addShape(square);
-//        compositeShape.addShape(line);
-//        compositeShape.addShape(ellipse);
-//        compositeShape.addShape(circle);
-//        compositeShape.addShape(p1);
+//        Composite compositeShape = new Composite();
+//        compositeShape.appendShape(triangle);
+//        compositeShape.appendShape(rectangle);
+//        compositeShape.appendShape(line);
+//        compositeShape.appendShape(circle);
+//        compositeShape.appendShape(p1);
 //
-//        double compositeArea = compositeShape.area();
-//        double individualItemArea = rectangle.area() + square.area() + triangle.area() + line.area() + ellipse.area() +
-//                circle.area() + p1.area();
-//        assertEquals(compositeArea, individualItemArea, 0.001);
+//        double compositeArea = compositeShape.computeArea();
+//        double individualShapeArea = rectangle.computeArea() + triangle.computeArea()+ line.computeArea()+ circle.computeArea() + p1.computeArea();
+//        assertEquals( individualShapeArea, compositeArea ,0.001);
 //    }
 //
 //    @Test
-//    public void render() throws Exception {
-//        Point p1 = new Point(0, 0);
-//        Point p2 = new Point(40, 0);
-//        Point p3 = new Point(40, 40);
-//        Point p4 = new Point(0, 40);
+//    public void renderTesting() throws Exception {
+//        Point p1 =new Point(0,5);
+//        Point p2 =new Point(5,5);
+//        Point p3 =new Point(0,0);
+//        Point p4 =new Point(5,0);
 //
-//        Point p5 = new Point(40, 60);
-//        Point p6 = new Point(0, 60);
-//
-//        Rectangle rectangle = new Rectangle(p1, p2, p5, p6);
-//        Square square = new Square(p1, p2, p3, p4);
+//        Circle circle = new Circle(p1, 50);
+//        Rectangle rectangle = new Rectangle(p1, p2, p3, p4);
 //        Triangle triangle = new Triangle(p1, p2, p3);
-//        Line line = new Line(p1, p5);
-//        Ellipse ellipse = new Ellipse(100, 100, 50, 40);
-//        Circle circle = new Circle(200, 200, 40);
+//        Line line = new Line(p1, p2);
 //
 //        String imageFilename = "image.jpg";
 //        EmbedImage embedImage = new EmbedImage(imageFilename, 200, 200, 400, 400);
@@ -197,35 +178,5 @@ public class CompositeTest {
 //        ImageIO.write(bufferedImage, "jpg", file);
 //        graphics.dispose();
 //    }
-//
-//
-//    @Test
-//    public void toStringTest() throws Exception{
-//        // Composite of composite and embedded image
-//        Point p1 = new Point(0, 0);
-//        Point p2 = new Point(40, 0);
-//        Point p3 = new Point(40, 40);
-//        Point p4 = new Point(0, 40);
-//
-//        Point p5 = new Point(40, 60);
-//        Point p6 = new Point(0, 60);
-//
-//        Rectangle rectangle = new Rectangle(p1, p2, p5, p6);
-//        Square square = new Square(p1, p2, p3, p4);
-//        Triangle triangle = new Triangle(p1, p2, p3);
-//        Ellipse ellipse = new Ellipse(100, 100, 50, 40);
-//
-//        CompositeShape compositeShape = new CompositeShape();
-//        CompositeShape compositeShapeInner = new CompositeShape();
-//
-//        compositeShape.addShape(triangle);
-//        compositeShape.addShape(rectangle);
-//
-//        compositeShapeInner.addShape(square);
-//        compositeShapeInner.addShape(ellipse);
-//
-//        compositeShape.addShape(compositeShapeInner);
-////        CompositeShape newComposite = new CompositeShape(compositeShape.toString());
-//        // that's because compositeShapeInner count as 1
-//    }
+
 }

@@ -112,71 +112,66 @@ public class CompositeTest {
         assertEquals(shiftedCompositeShape.computeArea(), compositeShape.computeArea(),0.1);
     }
 
-//    @Test
-//    public void computeAreaTesting() throws Exception {
-//        Point p1 =new Point(0,5);
-//        Point p2 =new Point(5,5);
-//        Point p3 =new Point(0,0);
-//        Point p4 =new Point(5,0);
-//
-//        Rectangle rectangle = new Rectangle(p1, p2,p3, p4);
-//        Triangle triangle = new Triangle(p1, p2, p3);
-//        Line line = new Line(p1, p2);
-//        Circle circle = new Circle(p2, 40);
-//
-//        Composite compositeShape = new Composite();
-//        compositeShape.appendShape(triangle);
-//        compositeShape.appendShape(rectangle);
-//        compositeShape.appendShape(line);
-//        compositeShape.appendShape(circle);
-//        compositeShape.appendShape(p1);
-//
-//        double compositeArea = compositeShape.computeArea();
-//        double individualShapeArea = rectangle.computeArea() + triangle.computeArea()+ line.computeArea()+ circle.computeArea() + p1.computeArea();
-//        assertEquals( individualShapeArea, compositeArea ,0.001);
-//    }
-//
-//    @Test
-//    public void renderTesting() throws Exception {
-//        Point p1 =new Point(0,5);
-//        Point p2 =new Point(5,5);
-//        Point p3 =new Point(0,0);
-//        Point p4 =new Point(5,0);
-//
-//        Circle circle = new Circle(p1, 50);
-//        Rectangle rectangle = new Rectangle(p1, p2, p3, p4);
-//        Triangle triangle = new Triangle(p1, p2, p3);
-//        Line line = new Line(p1, p2);
-//
-//        String imageFilename = "image.jpg";
-//        EmbedImage embedImage = new EmbedImage(imageFilename, 200, 200, 400, 400);
-//
-//        CompositeShape compositeShape = new CompositeShape();
-//        compositeShape.addShape(embedImage);
-//        compositeShape.addShape(triangle);
-//        compositeShape.addShape(rectangle);
-//        compositeShape.addShape(square);
-//        compositeShape.addShape(line);
-//        compositeShape.addShape(ellipse);
-//        compositeShape.addShape(circle);
-//        compositeShape.addShape(p1);
-//
-//        double area = compositeShape.area();
-//        System.out.println("Computed area of the composite shape is :" + area);
-//
-//        // Construct the bufferedImage of one of the predefined image types
-//        BufferedImage bufferedImage = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
-//
-//        // create a graphics which can be used to draw into buffered image
-//        Graphics2D graphics = bufferedImage.createGraphics();
-//        graphics.setColor(Color.white);
-//
-//        compositeShape.render(graphics);
-//
-//        // Save as PNG
-//        File file = new File("composite.jpg");
-//        ImageIO.write(bufferedImage, "jpg", file);
-//        graphics.dispose();
-//    }
+    @Test
+    public void computeAreaTesting() throws Exception {
+        Point p1 =new Point(0,5);
+        Point p2 =new Point(5,5);
+        Point p3 =new Point(0,0);
+        Point p4 =new Point(5,0);
+
+        Rectangle rectangle = new Rectangle(p1, p2,p3, p4);
+        Triangle triangle = new Triangle(p1, p2, p3);
+        Line line = new Line(p1, p2);
+        Circle circle = new Circle(p2, 40);
+
+        Composite compositeShape = new Composite();
+        compositeShape.appendShape(triangle);
+        compositeShape.appendShape(rectangle);
+        compositeShape.appendShape(line);
+        compositeShape.appendShape(circle);
+        compositeShape.appendShape(p1);
+
+        double compositeArea = compositeShape.computeArea();
+        double individualShapeArea = rectangle.computeArea() + triangle.computeArea()+ line.computeArea()+ circle.computeArea() + p1.computeArea();
+        assertEquals( individualShapeArea, compositeArea ,0.001);
+    }
+
+    @Test
+    public void renderTesting() throws Exception {
+        Point p1 =new Point(200,280);
+        Point p2 =new Point(240,280);
+        Point p3 =new Point(200,320);
+        Point p4 =new Point(240,320);
+        Point p5 =new Point(320,360);
+        Point p6 =new Point(350,380);
+        Point p7 =new Point(400,380);
+        Point p8 =new Point(350,440);
+
+        Circle circle = new Circle(p1, 50);
+        Rectangle rectangle = new Rectangle(p1, p2, p3, p4);
+        Triangle triangle = new Triangle(p6, p7, p8);
+        Line line = new Line(p4, p5);
+
+        EmbeddedImage embeddedImage = new EmbeddedImage("picture.jpg", 200, 200, 40, 40);
+
+        Composite compositeShape = new Composite();
+        compositeShape.appendShape(embeddedImage);
+        compositeShape.appendShape(triangle);
+        compositeShape.appendShape(rectangle);
+        compositeShape.appendShape(line);
+        compositeShape.appendShape(circle);
+        compositeShape.appendShape(p1);
+
+        double area = compositeShape.computeArea();
+        System.out.println(" Area of the composite shape is :" + area);
+
+        BufferedImage bufferedImage = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
+
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        compositeShape.render(graphics);
+
+        ImageIO.write(bufferedImage, "jpg",new File("output/composite.jpg"));
+    }
 
 }

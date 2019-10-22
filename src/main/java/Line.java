@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  *
  *  Line
@@ -65,6 +67,27 @@ public class Line {
     public double computeLength() {
         return Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
                 Math.pow(point2.getY() - point1.getY(), 2));
+    }
+
+    public void scaleLine(double scaleFactor) throws ShapeException {
+        Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
+
+        double y2=point2.getY();
+        double x2=point2.getX();
+        y2=(y2*scaleFactor)-y2;
+        x2=(x2*scaleFactor)-x2;
+
+        point1.move(0,0);
+        point2.move(x2,y2);
+
+    }
+
+    public void renderLine(Graphics2D graphics) throws ShapeException {
+        int x1=(int)point1.getX();
+        int y1=(int)point1.getY();
+        int x2=(int)point2.getX();
+        int y2=(int)point2.getY();
+        graphics.drawLine(x1,y1,x2,y2);
     }
 
     /**

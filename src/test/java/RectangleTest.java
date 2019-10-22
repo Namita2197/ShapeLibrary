@@ -90,7 +90,7 @@ public class RectangleTest {
         Point corner4 =new Point(20,10);
         Rectangle testArea= new Rectangle(corner1,corner2,corner3,corner4);
         double area=testArea.computeArea();
-        assertEquals(50,area,0);
+        assertEquals(50,area,0.1);
     }
 
     @Test

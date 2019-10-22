@@ -1,5 +1,11 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class LineTest {
@@ -135,6 +141,31 @@ public class LineTest {
         assertEquals(4, myLine.getPoint2().getX(), 0);
         assertEquals(10, myLine.getPoint2().getY(), 0);
 
+    }
+
+    @Test
+    public void testScaling() throws ShapeException {
+        Point corner1 =new Point(10,15);
+        Point corner2 =new Point(20,15);
+        Line lineScaling=new Line(corner1,corner2);
+        lineScaling.scaleLine(2);
+        assertEquals(40,lineScaling.getPoint2().getX(),0);
+        assertEquals(30,lineScaling.getPoint2().getY(),0);
+    }
+
+    @Test
+    public void testRenderLine() throws ShapeException, IOException {
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(50, 10);
+        Line testingLine =new Line(corner1,corner2);
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0,0,100,100);
+        graphics.setColor(Color.BLACK);
+
+        testingLine.renderLine(graphics);
+        ImageIO.write(bufferedImage, "png", new File("output/Line.png"));
     }
 
 }

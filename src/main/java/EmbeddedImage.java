@@ -39,6 +39,16 @@ public class EmbeddedImage implements Shape{
     public void render(Graphics2D graphics) throws ShapeException {
         this.picture.render(graphics, this.startPoint.getX(), this.startPoint.getY(), this.height, this.width);
     }
+    @Override
+    public String toString() {
+        return "EmbeddedImage:" +
+                this.filename + "," +
+                this.startPoint.getX() + "," +
+                this.startPoint.getY() + "," +
+                this.height + "," +
+                this.width;
+    }
+
 
     public Point getStartPoint(){
         return this.startPoint;

@@ -94,6 +94,30 @@ public class Line implements Shape{
         graphics.drawLine(x1,y1,x2,y2);
     }
 
+    @Override
+    public String toString() {
+        String result=null;
+        try {
+             result= "Line:" +
+                    String.valueOf(this.getPoint1().getX()) + "," +
+                    String.valueOf(this.getPoint1().getY()) + "," +
+                    String.valueOf(this.getPoint2().getX()) + "," +
+                    String.valueOf(this.getPoint2().getY());
+        } catch (ShapeException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+    public Line(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("line:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+    }
+
     /**
      * @return  The slope of the line
      */

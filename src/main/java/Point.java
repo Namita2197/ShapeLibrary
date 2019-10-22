@@ -84,6 +84,23 @@ public class Point implements Shape {
         graphics.drawLine(x,y,x,y);
     }
 
+    @Override
+    public String toString() {
+        return "Point:" +
+                String.valueOf(this.getX()) + "," +
+                String.valueOf(this.getY());
+    }
+
+    public Point(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("point:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.x = Double.valueOf(strings[0]);
+        this.y = Double.valueOf(strings[1]);
+    }
+
     /**
      * Copy the point
      * @return                  A new point with same x and y locations

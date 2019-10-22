@@ -274,4 +274,12 @@ public class CircleTest {
         ImageIO.write(bufferedImage, "png", new File("output/Circle.png"));
     }
 
+    @Test
+    public void stringConstructorTest() throws ShapeException {
+        Point center = new Point(10, 10);
+        Circle testingCircle =new Circle(center,20);
+        Circle circle =new Circle(testingCircle.toString());
+        assertTrue(testingCircle.toString().equals(circle.toString()));
+    }
+
 }

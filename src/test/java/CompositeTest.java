@@ -171,7 +171,7 @@ public class CompositeTest {
         graphics.setColor(Color.white);
         compositeShape.render(graphics);
 
-        ImageIO.write(bufferedImage, "jpg",new File("output/composite.jpg"));
+        ImageIO.write(bufferedImage, "png",new File("output/composite.png"));
     }
 
 }

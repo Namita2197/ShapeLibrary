@@ -100,4 +100,36 @@ public class Rectangle implements Shape {
         graphics.drawPolyline(x, y, 5);
     }
 
+    @Override
+    public String toString() {
+        String result=null;
+        try {
+            result= "Rectangle:" +
+                    String.valueOf(this.getCorner1().getX()) + "," +
+                    String.valueOf(this.getCorner1().getY()) + "," +
+                    String.valueOf(this.getCorner2().getX()) + "," +
+                    String.valueOf(this.getCorner2().getY()) + "," +
+                    String.valueOf(this.getCorner3().getX()) + "," +
+                    String.valueOf(this.getCorner3().getY()) + "," +
+                    String.valueOf(this.getCorner4().getX()) + "," +
+                    String.valueOf(this.getCorner4().getY());
+        } catch (ShapeException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public Rectangle(String string) throws Exception {
+
+        if (string.toLowerCase().contains("rectangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.corner2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        this.corner3 = new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+        this.corner4= new Point(Double.valueOf(strings[6]), Double.valueOf(strings[7]));
+        checkRectangleValidity(corner1, corner2, corner3, corner4);
+    }
+
 }

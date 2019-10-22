@@ -35,6 +35,12 @@ public class EmbeddedImage implements Shape{
         return this.width*this.height;
     }
 
+    public void scale(double scaleFactor) throws ShapeException {
+        Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
+        height=(int)(getHeight()*scaleFactor);
+        width=(int)(getWidth()*scaleFactor);
+    }
+
     @Override
     public void render(Graphics2D graphics) throws ShapeException {
         this.picture.render(graphics, this.startPoint.getX(), this.startPoint.getY(), this.height, this.width);
@@ -53,6 +59,8 @@ public class EmbeddedImage implements Shape{
     public Point getStartPoint(){
         return this.startPoint;
     }
+    public int getHeight(){ return this.height; }
+    public int getWidth(){ return this.width; }
 
     public EmbeddedImage(String string) throws ShapeException {
         if (string.toLowerCase().contains("embeddedimage:"))

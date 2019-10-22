@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02684fc3-29eb-4bee-a63b-55d4d0ad91bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Composite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Composite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmbeddedImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmbeddedImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CompositeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CompositeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/EmbeddedImageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/EmbeddedImageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/EmbeddedImageTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-EmbeddedImageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Composite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Composite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CompositeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +82,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +98,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gradinghw3" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -92,33 +130,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EmbeddedImageTest.render">
-    <configuration name="EmbeddedImageTest.computeAreaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CircleTest.stringConstructorTest">
+    <configuration name="CircleTest.stringConstructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.computeAreaTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EmbeddedImageTest.moveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.moveTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CircleTest.stringConstructorTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,12 +171,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmbeddedImageTest.startPointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EmbeddedImageTest.scale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.startPointTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.scale&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,12 +191,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmbeddedImageTest.stringConstructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LineTest.stringConstructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.stringConstructorTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;LineTest.stringConstructorTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointTest.stringConstructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PointTest.stringConstructorTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -194,19 +232,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.EmbeddedImageTest.computeAreaTest" />
-      <item itemvalue="Gradle.EmbeddedImageTest.moveTest" />
-      <item itemvalue="Gradle.EmbeddedImageTest.stringConstructorTest" />
-      <item itemvalue="Gradle.EmbeddedImageTest.startPointTest" />
       <item itemvalue="Gradle.EmbeddedImageTest.render" />
+      <item itemvalue="Gradle.PointTest.stringConstructorTest" />
+      <item itemvalue="Gradle.EmbeddedImageTest.scale" />
+      <item itemvalue="Gradle.LineTest.stringConstructorTest" />
+      <item itemvalue="Gradle.CircleTest.stringConstructorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CircleTest.stringConstructorTest" />
+        <item itemvalue="Gradle.LineTest.stringConstructorTest" />
+        <item itemvalue="Gradle.EmbeddedImageTest.scale" />
+        <item itemvalue="Gradle.PointTest.stringConstructorTest" />
         <item itemvalue="Gradle.EmbeddedImageTest.render" />
-        <item itemvalue="Gradle.EmbeddedImageTest.startPointTest" />
-        <item itemvalue="Gradle.EmbeddedImageTest.stringConstructorTest" />
-        <item itemvalue="Gradle.EmbeddedImageTest.moveTest" />
-        <item itemvalue="Gradle.EmbeddedImageTest.computeAreaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +262,7 @@
       <workItem from="1571680268058" duration="887000" />
       <workItem from="1571681178147" duration="98000" />
       <workItem from="1571681290412" duration="30427000" />
-      <workItem from="1571766383432" duration="5189000" />
+      <workItem from="1571766383432" duration="11188000" />
     </task>
     <servers />
   </component>

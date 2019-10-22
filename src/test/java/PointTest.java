@@ -251,4 +251,10 @@ public class PointTest {
         ImageIO.write(bufferedImage, "png", new File("output/Point.png"));
     }
 
+    @Test
+    public void stringConstructorTest() throws ShapeException {
+        Point p1 = new Point(40, 50);
+        Point p2 = new Point(p1.toString());
+        assertTrue(p1.toString().equals(p2.toString()));
+    }
 }

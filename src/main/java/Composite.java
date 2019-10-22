@@ -43,4 +43,13 @@ public class Composite implements Shape {
             shape.render(graphics);
         }
     }
+
+    @Override
+    public String toString() {
+        String result = "Composite:" + String.valueOf(this.composite.size()) + System.lineSeparator();
+        for (Shape shape : composite) {
+            result = result.concat(shape.toString() + System.lineSeparator());
+        }
+        return result;
+    }
 }

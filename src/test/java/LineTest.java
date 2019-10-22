@@ -176,5 +176,13 @@ public class LineTest {
         testingLine.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Line.png"));
     }
+    @Test
+    public void stringConstructorTest() throws ShapeException {
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(50, 10);
+        Line testingLine =new Line(corner1,corner2);
+        Line line = new Line(testingLine.toString());
+        assertTrue(testingLine.toString().equals(line.toString()));
+    }
 
 }

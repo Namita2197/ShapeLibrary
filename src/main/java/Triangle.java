@@ -97,4 +97,32 @@ public class Triangle implements Shape{
 
         graphics.drawPolyline(x, y, 4);
     }
+
+    @Override
+    public String toString() {
+        String result=null;
+        try {
+            result="Triangle:" +
+                    String.valueOf(this.getCorner1().getX()) + "," +
+                    String.valueOf(this.getCorner1().getY()) + "," +
+                    String.valueOf(this.getCorner2().getX()) + "," +
+                    String.valueOf(this.getCorner2().getY()) + "," +
+                    String.valueOf(this.getCorner3().getX()) + "," +
+                    String.valueOf(this.getCorner3().getY());
+        } catch (ShapeException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public Triangle(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("triangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.corner2= new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        this.corner3= new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+    }
 }

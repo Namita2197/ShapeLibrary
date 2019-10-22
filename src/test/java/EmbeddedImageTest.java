@@ -58,6 +58,15 @@ public class EmbeddedImageTest {
     }
 
     @Test
+    public void scale() throws Exception {
+        String filename = "Tree.jpg";
+        EmbeddedImage embeddedImage = new EmbeddedImage(filename, 10, 10, 50, 50);
+        embeddedImage.scale(3);
+        assertEquals(150,embeddedImage.getHeight());
+        assertEquals(150,embeddedImage.getWidth());
+    }
+
+    @Test
     public void render() throws Exception {
 
         String filename = "Tree.jpg";

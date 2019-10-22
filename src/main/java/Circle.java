@@ -89,4 +89,25 @@ public class Circle implements Shape{
        graphics.drawOval(x,y,diameter,diameter);
     }
 
+    @Override
+    public String toString() {
+        return "Circle:" +
+                String.valueOf(this.center.getX()) + "," +
+                String.valueOf(this.center.getY()) + "," +
+                String.valueOf(this.radius);
+    }
+
+    public Circle(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("circle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        double x = Double.valueOf(strings[0]);
+        double y = Double.valueOf(strings[1]);
+        this.radius = Double.valueOf(strings[2]);
+        this.center = new Point(x, y);
+
+    }
+
 }

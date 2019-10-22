@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 public class CompositeTest {
@@ -172,6 +173,35 @@ public class CompositeTest {
         compositeShape.render(graphics);
 
         ImageIO.write(bufferedImage, "png",new File("output/composite.png"));
+    }
+
+    @Test
+    public void toStringTest() throws Exception{
+        Point p1 =new Point(200,280);
+        Point p2 =new Point(240,280);
+        Point p3 =new Point(200,320);
+        Point p4 =new Point(240,320);
+        Point p5 =new Point(320,360);
+        Point p6 =new Point(350,380);
+        Point p7 =new Point(400,380);
+        Point p8 =new Point(350,440);
+
+
+        Rectangle rectangle = new Rectangle(p1, p2, p3, p4);
+        Triangle triangle = new Triangle(p6, p7, p8);
+
+        EmbeddedImage embeddedImage = new EmbeddedImage("picture.jpg", 200, 200, 40, 40);
+        Composite compositeShape1 = new Composite();
+        Composite compositeShape2 = new Composite();
+
+        compositeShape1.appendShape(triangle);
+        compositeShape1.appendShape(rectangle);
+
+        compositeShape2.appendShape(triangle);
+        compositeShape2.appendShape(rectangle);
+
+        assertTrue(compositeShape1.toString().equals(compositeShape2.toString()));
+
     }
 
 }

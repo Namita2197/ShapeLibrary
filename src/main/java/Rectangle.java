@@ -11,8 +11,6 @@ public class Rectangle implements Shape {
         corner2 = new Point(x2, y2);
         corner3 = new Point(x3, y3);
         corner4 = new Point(x4, y4);
-        if (corner1 == null || corner2 == null || corner3 == null || corner4 == null)
-            throw new ShapeException("Invalid vertex or vertices");
 
         checkRectangleValidity(corner1, corner2, corner3, corner4);
     }
@@ -126,9 +124,7 @@ public class Rectangle implements Shape {
                     String.valueOf(this.getCorner3().getY()) + "," +
                     String.valueOf(this.getCorner4().getX()) + "," +
                     String.valueOf(this.getCorner4().getY());
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
+        } catch (ShapeException e) { }
         return result;
     }
 }

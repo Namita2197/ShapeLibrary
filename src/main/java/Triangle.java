@@ -10,9 +10,6 @@ public class Triangle implements Shape{
         corner2 = new Point(x2, y2);
         corner3 = new Point(x3, y3);
 
-        if (corner1 == null || corner2 == null || corner3 == null )
-            throw new ShapeException("Invalid vertex or vertices");
-
         checkTriangleValidity(corner1, corner2, corner3);
     }
 
@@ -120,9 +117,7 @@ public class Triangle implements Shape{
                     String.valueOf(this.getCorner2().getY()) + "," +
                     String.valueOf(this.getCorner3().getX()) + "," +
                     String.valueOf(this.getCorner3().getY());
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
+        } catch (ShapeException e) { }
         return result;
     }
 }

@@ -114,9 +114,7 @@ public class Line implements Shape{
                     String.valueOf(this.getPoint1().getY()) + "," +
                     String.valueOf(this.getPoint2().getX()) + "," +
                     String.valueOf(this.getPoint2().getY());
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
+        } catch (ShapeException e) { }
         return result;
     }
 

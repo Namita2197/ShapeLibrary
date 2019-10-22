@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * Circle
  *
@@ -77,6 +79,14 @@ public class Circle {
      */
     public double computeArea() {
         return Math.PI * Math.pow(radius, 2);
+    }
+
+    public void renderCircle(Graphics2D graphics) {
+
+       int diameter= (int)radius*2;
+       int x=(int)(center.getX()-radius);
+       int y=(int)(center.getY()-radius);
+       graphics.drawOval(x,y,diameter,diameter);
     }
 
 }

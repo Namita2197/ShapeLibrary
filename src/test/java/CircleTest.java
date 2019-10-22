@@ -1,5 +1,11 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class CircleTest {
@@ -249,6 +255,23 @@ public class CircleTest {
         center.move(4, 5);
         assertEquals(1, myCircle.getCenter().getX(), 0);
         assertEquals(2, myCircle.getCenter().getY(), 0);
+    }
+
+    @Test
+    public void renderCircleTesting() throws ShapeException, IOException {
+        Point center = new Point(50, 50);
+
+        Circle circle =new Circle(center, 20);
+
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0,0,100,100);
+        graphics.setColor(Color.BLACK);
+
+        circle.renderCircle(graphics);
+        ImageIO.write(bufferedImage, "png", new File("output/Circle.png"));
     }
 
 }

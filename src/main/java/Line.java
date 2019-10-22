@@ -82,6 +82,10 @@ public class Line {
 
     }
 
+    public double computeArea(){
+        return 0;
+    }
+
     public void renderLine(Graphics2D graphics) throws ShapeException {
         int x1=(int)point1.getX();
         int y1=(int)point1.getY();

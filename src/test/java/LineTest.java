@@ -154,6 +154,15 @@ public class LineTest {
     }
 
     @Test
+    public void testComputeArea() throws ShapeException {
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(50, 10);
+        Line testingLine =new Line(corner1,corner2);
+        double area = testingLine.computeArea();
+        assertEquals(0,area,0);
+    }
+
+    @Test
     public void testRenderLine() throws ShapeException, IOException {
         Point corner1 = new Point(10, 10);
         Point corner2 = new Point(50, 10);

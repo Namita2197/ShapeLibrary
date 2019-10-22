@@ -24,7 +24,7 @@ public class Triangle {
         if (corner1 == null || corner2 == null || corner3 == null)
             throw new ShapeException("Invalid vertex or vertices");
 
-        checkRectangleValidity(corner1, corner2, corner3);
+        checkTriangleValidity(corner1, corner2, corner3);
     }
 
     public Point getCorner1() throws ShapeException { return corner1; }
@@ -58,46 +58,43 @@ public class Triangle {
     }
 
     public double computeArea() throws ShapeException {
-        Line length=new Line(corner1, corner2);
-        Line breadth = new Line(corner2, corner4);
-        double lengthMeasure=length.computeLength();
-        double breadthMeasure=breadth.computeLength();
-        return lengthMeasure*breadthMeasure;
+        double x1 = corner1.getX();
+        double x2 = corner2.getX();
+        double x3 = corner3.getX();
+        double y1 = corner1.getY();
+        double y2 = corner2.getY();
+        double y3 = corner3.getY();
+        double area = (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2.0;
+        return area;
+
     }
-    public void checkRectangleValidity(Point corner1,Point corner2,Point corner3, Point corner4) throws ShapeException {
+    public void checkTriangleValidity(Point corner1,Point corner2,Point corner3) throws ShapeException {
         Line line1 = new Line(corner1, corner2);
-        Line line2 = new Line(corner2, corner4);
-        Line line3 = new Line(corner1, corner3);
-        Line line4 = new Line(corner3, corner4);
-        Line hypotenuse1 = new Line(corner1, corner4);
+        Line line2 = new Line(corner2, corner3);
+        Line line3 = new Line(corner3, corner1);
 
         double lengthLine1 = line1.computeLength();
         double lengthLine2 = line2.computeLength();
         double lengthLine3 = line3.computeLength();
-        double lengthLine4 = line4.computeLength();
-        double lengthHypotenuse = hypotenuse1.computeLength();
 
-        assert Math.round(Math.sqrt(Math.pow(lengthLine1, 2) + Math.pow(lengthLine2, 2))) == Math.round(lengthHypotenuse);
-        assert Math.round(Math.sqrt(Math.pow(lengthLine3, 2) + Math.pow(lengthLine4, 2))) == Math.round(lengthHypotenuse);
+        assert lengthLine1+lengthLine2>lengthLine3;
     }
 
-    public void renderRectangle(Graphics2D graphics) throws ShapeException {
+    public void renderTriangle(Graphics2D graphics) throws ShapeException {
 
-        int[] x = new int[5];
-        int[] y = new int[5];
+        int[] x = new int[4];
+        int[] y = new int[4];
 
         x[0] = (int)getCorner1().getX();
         x[1] = (int)getCorner2().getX();
-        x[2] = (int)getCorner4().getX();
-        x[3] = (int)getCorner3().getX();
-        x[4]=x[0];
+        x[2] = (int)getCorner3().getX();
+        x[3]=x[0];
 
         y[0] = (int)getCorner1().getY();
         y[1] = (int)getCorner2().getY();
-        y[2] = (int)getCorner4().getY();
-        y[3] = (int)getCorner3().getY();
-        y[4]=y[0];
+        y[2] = (int)getCorner3().getY();
+        y[3]=y[0];
 
-        graphics.drawPolyline(x, y, 5);
+        graphics.drawPolyline(x, y, 4);
     }
 }

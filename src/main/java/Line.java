@@ -39,6 +39,17 @@ public class Line implements Shape{
         this.point2 = point2.copy();
     }
 
+    public Line(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("line:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+    }
+
+
     /**
      * @return  The first point
      */
@@ -107,15 +118,6 @@ public class Line implements Shape{
             e.printStackTrace();
         }
         return result;
-    }
-    public Line(String string) throws ShapeException {
-
-        if (string.toLowerCase().contains("line:"))
-            string = string.split(":")[1];
-
-        String[] strings = string.split(",");
-        this.point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
-        this.point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
     }
 
     /**

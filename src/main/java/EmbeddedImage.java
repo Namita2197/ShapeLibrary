@@ -24,6 +24,19 @@ public class EmbeddedImage implements Shape{
         }
     }
 
+    public EmbeddedImage(String string) throws ShapeException {
+        if (string.toLowerCase().contains("embeddedimage:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.filename = strings[0];
+        double x = Double.valueOf(strings[1]);
+        double y = Double.valueOf(strings[2]);
+        this.height = Integer.valueOf(strings[3]);
+        this.width = Integer.valueOf(strings[4]);
+        this.startPoint = new Point(x, y);
+    }
+
 
     @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
@@ -62,17 +75,6 @@ public class EmbeddedImage implements Shape{
     public int getHeight(){ return this.height; }
     public int getWidth(){ return this.width; }
 
-    public EmbeddedImage(String string) throws ShapeException {
-        if (string.toLowerCase().contains("embeddedimage:"))
-            string = string.split(":")[1];
 
-        String[] strings = string.split(",");
-        this.filename = strings[0];
-        double x = Double.valueOf(strings[1]);
-        double y = Double.valueOf(strings[2]);
-        this.height = Integer.valueOf(strings[3]);
-        this.width = Integer.valueOf(strings[4]);
-        this.startPoint = new Point(x, y);
-    }
 
 }

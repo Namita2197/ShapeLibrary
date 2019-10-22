@@ -41,6 +41,19 @@ public class Circle implements Shape{
         this.radius = radius;
     }
 
+    public Circle(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("circle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        double x = Double.valueOf(strings[0]);
+        double y = Double.valueOf(strings[1]);
+        this.radius = Double.valueOf(strings[2]);
+        this.center = new Point(x, y);
+
+    }
+
     /**
      * @return  The center of the circle
      */
@@ -97,17 +110,6 @@ public class Circle implements Shape{
                 String.valueOf(this.radius);
     }
 
-    public Circle(String string) throws ShapeException {
 
-        if (string.toLowerCase().contains("circle:"))
-            string = string.split(":")[1];
-
-        String[] strings = string.split(",");
-        double x = Double.valueOf(strings[0]);
-        double y = Double.valueOf(strings[1]);
-        this.radius = Double.valueOf(strings[2]);
-        this.center = new Point(x, y);
-
-    }
 
 }

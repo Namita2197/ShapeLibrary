@@ -27,6 +27,17 @@ public class Triangle implements Shape{
         checkTriangleValidity(corner1, corner2, corner3);
     }
 
+    public Triangle(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("triangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.corner2= new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        this.corner3= new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+    }
+
     public Point getCorner1() throws ShapeException { return corner1; }
     public Point getCorner2() throws ShapeException { return corner2; }
     public Point getCorner3() throws ShapeException { return corner3; }
@@ -113,16 +124,5 @@ public class Triangle implements Shape{
             e.printStackTrace();
         }
         return result;
-    }
-
-    public Triangle(String string) throws ShapeException {
-
-        if (string.toLowerCase().contains("triangle:"))
-            string = string.split(":")[1];
-
-        String[] strings = string.split(",");
-        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
-        this.corner2= new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
-        this.corner3= new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
     }
 }

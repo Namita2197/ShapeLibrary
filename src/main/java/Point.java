@@ -26,6 +26,16 @@ public class Point implements Shape {
         this.y = y;
     }
 
+    public Point(String string) throws ShapeException {
+
+        if (string.toLowerCase().contains("point:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.x = Double.valueOf(strings[0]);
+        this.y = Double.valueOf(strings[1]);
+    }
+
     /**
      * @return  The x-location of the point
      */
@@ -89,16 +99,6 @@ public class Point implements Shape {
         return "Point:" +
                 String.valueOf(this.getX()) + "," +
                 String.valueOf(this.getY());
-    }
-
-    public Point(String string) throws ShapeException {
-
-        if (string.toLowerCase().contains("point:"))
-            string = string.split(":")[1];
-
-        String[] strings = string.split(",");
-        this.x = Double.valueOf(strings[0]);
-        this.y = Double.valueOf(strings[1]);
     }
 
     /**

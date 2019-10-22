@@ -28,6 +28,19 @@ public class Rectangle implements Shape {
         checkRectangleValidity(corner1, corner2, corner3, corner4);
     }
 
+    public Rectangle(String string) throws Exception {
+
+        if (string.toLowerCase().contains("rectangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        this.corner2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        this.corner3 = new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+        this.corner4= new Point(Double.valueOf(strings[6]), Double.valueOf(strings[7]));
+        checkRectangleValidity(corner1, corner2, corner3, corner4);
+    }
+
     public Point getCorner1() throws ShapeException { return corner1; }
     public Point getCorner2() throws ShapeException { return corner2; }
     public Point getCorner3() throws ShapeException { return corner3; }
@@ -118,18 +131,4 @@ public class Rectangle implements Shape {
         }
         return result;
     }
-
-    public Rectangle(String string) throws Exception {
-
-        if (string.toLowerCase().contains("rectangle:"))
-            string = string.split(":")[1];
-
-        String[] strings = string.split(",");
-        this.corner1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
-        this.corner2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
-        this.corner3 = new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
-        this.corner4= new Point(Double.valueOf(strings[6]), Double.valueOf(strings[7]));
-        checkRectangleValidity(corner1, corner2, corner3, corner4);
-    }
-
 }

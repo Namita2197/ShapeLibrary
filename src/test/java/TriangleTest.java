@@ -101,4 +101,14 @@ public class TriangleTest {
         triangle.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Triangle.png"));
     }
+
+    @Test
+    public void stringConstructorTest() throws ShapeException {
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(10, 0);
+        Point corner3= new Point(50, 10);
+        Triangle triangle1 = new Triangle(corner1,corner2,corner3);
+        Triangle triangle2 = new Triangle(triangle1.toString());
+        assertTrue(triangle1.toString().equals(triangle2.toString()));
+    }
 }

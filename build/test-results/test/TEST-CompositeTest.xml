@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CompositeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-22T05:55:42" hostname="Namita" time="0.343">
-  <properties/>
-  <testcase name="renderTesting" classname="CompositeTest" time="0.343"/>
-  <system-out><![CDATA[ Area of the composite shape is :12553.981633974483
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

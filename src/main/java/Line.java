@@ -8,7 +8,7 @@ import java.awt.*;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Line {
+public class Line implements Shape{
     private Point point1;
     private Point point2;
 
@@ -86,7 +86,7 @@ public class Line {
         return 0;
     }
 
-    public void renderLine(Graphics2D graphics) throws ShapeException {
+    public void render(Graphics2D graphics) throws ShapeException {
         int x1=(int)point1.getX();
         int y1=(int)point1.getY();
         int x2=(int)point2.getX();

@@ -270,7 +270,7 @@ public class CircleTest {
         graphics.fillRect(0,0,100,100);
         graphics.setColor(Color.BLACK);
 
-        circle.renderCircle(graphics);
+        circle.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Circle.png"));
     }
 

@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Triangle {
+public class Triangle implements Shape{
     private Point corner1;
     private Point corner2;
     private Point corner3;
@@ -80,7 +80,7 @@ public class Triangle {
         assert lengthLine1+lengthLine2>lengthLine3;
     }
 
-    public void renderTriangle(Graphics2D graphics) throws ShapeException {
+    public void render(Graphics2D graphics) throws ShapeException {
 
         int[] x = new int[4];
         int[] y = new int[4];

@@ -7,7 +7,7 @@ import java.awt.*;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Circle {
+public class Circle implements Shape{
     private Point center;
     private double radius;
 
@@ -81,7 +81,7 @@ public class Circle {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    public void renderCircle(Graphics2D graphics) {
+    public void render(Graphics2D graphics) {
 
        int diameter= (int)radius*2;
        int x=(int)(center.getX()-radius);

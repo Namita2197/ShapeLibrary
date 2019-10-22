@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     private Point corner1;
     private Point corner2;
     private Point corner3;
@@ -80,7 +80,7 @@ public class Rectangle {
         assert Math.round(Math.sqrt(Math.pow(lengthLine3, 2) + Math.pow(lengthLine4, 2))) == Math.round(lengthHypotenuse);
     }
 
-    public void renderRectangle(Graphics2D graphics) throws ShapeException {
+    public void render(Graphics2D graphics) throws ShapeException {
 
         int[] x = new int[5];
         int[] y = new int[5];

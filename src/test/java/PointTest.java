@@ -246,7 +246,7 @@ public class PointTest {
         graphics.setColor(Color.white);
         graphics.fillRect(0,0,100,100);
         graphics.setColor(Color.BLACK);
-        point.renderPoint(graphics);
+        point.render(graphics);
 
         ImageIO.write(bufferedImage, "png", new File("output/Point.png"));
     }

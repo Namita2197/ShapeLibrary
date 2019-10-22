@@ -6,7 +6,7 @@ import java.awt.*;
  * This class represents point objects that can be moved and copied
  */
 @SuppressWarnings("WeakerAccess")
-public class Point {
+public class Point implements Shape {
     private double x;
     private double y;
 
@@ -78,7 +78,7 @@ public class Point {
         return 0;
     }
 
-    public void renderPoint(Graphics2D graphics) throws ShapeException {
+    public void render(Graphics2D graphics) throws ShapeException {
         int x = (int)getX();
         int y = (int)getY();
         graphics.drawLine(x,y,x,y);

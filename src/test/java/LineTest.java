@@ -173,7 +173,7 @@ public class LineTest {
         graphics.fillRect(0,0,100,100);
         graphics.setColor(Color.BLACK);
 
-        testingLine.renderLine(graphics);
+        testingLine.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Line.png"));
     }
 

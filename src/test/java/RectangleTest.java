@@ -47,7 +47,7 @@ public class RectangleTest {
     }
 
     @Test
-    public void move() throws ShapeException {
+    public void moveTest() throws ShapeException {
         Point corner1 =new Point(10,10);
         Point corner2 =new Point(20,10);
         Point corner3 =new Point(10,0);
@@ -65,7 +65,7 @@ public class RectangleTest {
     }
 
     @Test
-    public void scale() throws ShapeException {
+    public void scaleTest() throws ShapeException {
         Point corner1 =new Point(10,15);
         Point corner2 =new Point(20,15);
         Point corner3 =new Point(10,10);
@@ -83,7 +83,7 @@ public class RectangleTest {
     }
 
     @Test
-    public void computeArea() throws ShapeException {
+    public void computeAreaTest() throws ShapeException {
         Point corner1 =new Point(10,15);
         Point corner2 =new Point(20,15);
         Point corner3 =new Point(10,10);
@@ -108,7 +108,7 @@ public class RectangleTest {
         graphics.fillRect(0,0,100,100);
         graphics.setColor(Color.BLACK);
 
-        rectangle.renderRectangle(graphics);
+        rectangle.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Rectangle.png"));
     }
 }

@@ -111,4 +111,16 @@ public class RectangleTest {
         rectangle.render(graphics);
         ImageIO.write(bufferedImage, "png", new File("output/Rectangle.png"));
     }
+
+    @Test
+    public void stringConstructorTest() throws Exception {
+        Point corner1 = new Point(10, 10);
+        Point corner2 = new Point(50, 10);
+        Point corner3= new Point(10, 0);
+        Point corner4 = new Point(50, 0);
+        Rectangle rectangle1 = new Rectangle(corner1,corner2,corner3,corner4);
+        Rectangle rectangle2 = new Rectangle(rectangle1.toString());
+
+        assertTrue(rectangle1.toString().equals(rectangle2.toString()));
+    }
 }

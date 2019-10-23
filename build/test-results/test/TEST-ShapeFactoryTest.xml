@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShapeFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T02:11:05" hostname="Namita" time="0.015">
+<testsuite name="ShapeFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T04:11:27" hostname="Namita" time="0.016">
   <properties/>
-  <testcase name="testCreate" classname="ShapeFactoryTest" time="0.015"/>
+  <testcase name="testCreate" classname="ShapeFactoryTest" time="0.016"/>
   <system-out><![CDATA[Triangle 350.0,380.0,400.0,380.0,350.0,440.0
 Circle 200.0,280.0,50.0
 Line240.0,320.0,320.0,360.0

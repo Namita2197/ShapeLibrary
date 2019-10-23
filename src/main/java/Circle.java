@@ -49,7 +49,7 @@ public class Circle implements Shape{
         String[] strings = string.split(",");
         double x = Double.valueOf(strings[0]);
         double y = Double.valueOf(strings[1]);
-        this.radius = Double.valueOf(strings[2]);
+        this.radius = (Double.valueOf(strings[2]));
         this.center = new Point(x, y);
 
     }

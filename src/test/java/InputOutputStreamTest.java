@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class InputOutputStreamTest {
-    
+
     @Test
     public void readWriteShape() throws Exception {
         Point p1 =new Point(200,280);

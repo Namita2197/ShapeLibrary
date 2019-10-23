@@ -14,6 +14,11 @@ public class ShapeFactory {
                     Rectangle rectangle = new Rectangle(shape);
                     compositeShape.appendShape(rectangle);
                 }
+                if (shapeName.equals("point")) {
+                    System.out.println("Point" + shape);
+                    Point point = new Point(shape);
+                    compositeShape.appendShape(point);
+                }
                 if (shapeName.equals("circle")) {
                     System.out.println("Circle " + shape);
                     Circle circle = new Circle(shape);

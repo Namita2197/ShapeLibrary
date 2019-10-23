@@ -14,7 +14,11 @@ public class ShapeFactory {
                     Rectangle rectangle = new Rectangle(shape);
                     compositeShape.appendShape(rectangle);
                 }
-
+                if (shapeName.equals("circle")) {
+                    System.out.println("Circle " + shape);
+                    Circle circle = new Circle(shape);
+                    compositeShape.appendShape(circle);
+                }
                 if (shapeName.equals("triangle")) {
                     System.out.println("Triangle " + shape);
                     Triangle triangle = new Triangle(shape);
@@ -28,7 +32,7 @@ public class ShapeFactory {
                 }
 
                 if (shapeName.equals("embeddedimage")) {
-                    System.out.println("Line" + shape);
+                    System.out.println("embededimage" + shape);
                     EmbeddedImage embeddedImage= new EmbeddedImage(shape);
                     compositeShape.appendShape(embeddedImage);
                 }

@@ -26,10 +26,8 @@ public class ShapeFactoryTest {
             compositeShape.appendShape(rectangle);
 
             String compositeShapeString = compositeShape.toString();
-//            new Composite(compositeShapeString);
             ShapeFactory factory = new ShapeFactory();
             Composite stringToShape = factory.create(compositeShapeString);
-
 
             assertEquals(compositeShape.computeArea(), stringToShape.computeArea(), 0.5);
         }

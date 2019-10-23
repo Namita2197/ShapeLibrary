@@ -6,27 +6,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShapeFactoryTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShapeFactoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CompositeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CompositeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/composite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/composite.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Composite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Composite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InputOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CompositeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +62,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -82,7 +78,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gradinghw3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -114,13 +110,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CompositeTest.scaleTesting">
-    <configuration name="CompositeTest.computeAreaTesting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.InputOutputStreamTest.readWriteShape">
+    <configuration name="CompositeTest.scaleTesting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CompositeTest.computeAreaTesting&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CompositeTest.scaleTesting&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -135,12 +131,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompositeTest.scaleTesting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InputOutputStreamTest.readWriteShape" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CompositeTest.scaleTesting&quot;" />
+        <option name="scriptParameters" value="--tests &quot;InputOutputStreamTest.readWriteShape&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointTest.scaleTesting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PointTest.scaleTesting&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -195,40 +211,20 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'ShapeLibrary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Gradle.ShapeFactoryTest.testCreate" />
-      <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
-      <item itemvalue="Gradle.CompositeTest.computeAreaTesting" />
       <item itemvalue="Gradle.ShapeFactoryTest" />
       <item itemvalue="Gradle.CompositeTest.scaleTesting" />
+      <item itemvalue="Gradle.PointTest.scaleTesting" />
+      <item itemvalue="Gradle.InputOutputStreamTest.readWriteShape" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InputOutputStreamTest.readWriteShape" />
+        <item itemvalue="Gradle.PointTest.scaleTesting" />
         <item itemvalue="Gradle.CompositeTest.scaleTesting" />
         <item itemvalue="Gradle.ShapeFactoryTest.testCreate" />
         <item itemvalue="Gradle.ShapeFactoryTest" />
-        <item itemvalue="Gradle.CompositeTest.computeAreaTesting" />
-        <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +243,7 @@
       <workItem from="1571681178147" duration="98000" />
       <workItem from="1571681290412" duration="30427000" />
       <workItem from="1571766383432" duration="16708000" />
-      <workItem from="1571803036307" duration="2954000" />
+      <workItem from="1571803036307" duration="9150000" />
     </task>
     <servers />
   </component>

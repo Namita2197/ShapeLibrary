@@ -252,6 +252,13 @@ public class PointTest {
     }
 
     @Test
+    public void scaleTesting()throws ShapeException{
+        Point p1 = new Point(1,2);
+        p1.scale(2);
+        assertEquals(1,p1.getX(),0.1);
+    }
+
+    @Test
     public void stringConstructorTest() throws ShapeException {
         Point p1 = new Point(40, 50);
         Point p2 = new Point(p1.toString());

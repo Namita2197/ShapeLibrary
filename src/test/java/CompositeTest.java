@@ -203,7 +203,7 @@ public class CompositeTest {
 
         compositeShape.scale(2);
 
-        assertEquals( 480,line.getPoint1().getX(),0.1);
+        assertEquals( 640,line.getPoint2().getX(),0.1);
     }
 
 

@@ -78,7 +78,7 @@ public class EmbeddedImageTest {
         graphics.setColor(Color.white);
 
         embeddedImage.render(graphics);
-        ImageIO.write(bufferedImage, "png", new File("output/Emdedded.png"));
+        ImageIO.write(bufferedImage, "png", new File("output/Embedded.png"));
     }
 
 }

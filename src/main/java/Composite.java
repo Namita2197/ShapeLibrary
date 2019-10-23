@@ -45,7 +45,7 @@ public class Composite implements Shape {
     }
 
     @Override
-    public void scale(double scaleFactor) {
+    public void scale(double scaleFactor) throws ShapeException {
         for (Shape shape : composite) {
             shape.scale(scaleFactor);
         }

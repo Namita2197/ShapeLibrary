@@ -44,6 +44,7 @@ public class Rectangle implements Shape {
     public Point getCorner3() throws ShapeException { return corner3; }
     public Point getCorner4() throws ShapeException { return corner4; }
 
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         corner1.move(deltaX, deltaY);
         corner2.move(deltaX, deltaY);
@@ -51,6 +52,7 @@ public class Rectangle implements Shape {
         corner4.move(deltaX, deltaY);
     }
 
+    @Override
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         double y1=corner1.getY();
@@ -67,6 +69,7 @@ public class Rectangle implements Shape {
         corner4.move(x4,0);
     }
 
+    @Override
     public double computeArea() throws ShapeException {
         Line length=new Line(corner1, corner2);
         Line breadth = new Line(corner2, corner4);
@@ -91,6 +94,7 @@ public class Rectangle implements Shape {
         assert Math.round(Math.sqrt(Math.pow(lengthLine3, 2) + Math.pow(lengthLine4, 2))) == Math.round(lengthHypotenuse);
     }
 
+    @Override
     public void render(Graphics2D graphics) throws ShapeException {
 
         int[] x = new int[5];

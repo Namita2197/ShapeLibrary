@@ -45,6 +45,13 @@ public class Composite implements Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        for (Shape shape : composite) {
+            shape.scale(scaleFactor);
+        }
+    }
+
+    @Override
     public String toString() {
         String result = "Composite:" + String.valueOf(this.composite.size()) + System.lineSeparator();
         for (Shape shape : composite) {

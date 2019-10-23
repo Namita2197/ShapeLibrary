@@ -79,19 +79,28 @@ public class Point implements Shape {
      * @param deltaY            The delta amount to move the point in the y direction -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
+
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         moveX(deltaX);
         moveY(deltaY);
     }
 
+    @Override
     public double computeArea(){
         return 0;
     }
 
+    @Override
     public void render(Graphics2D graphics) throws ShapeException {
         int x = (int)getX();
         int y = (int)getY();
         graphics.drawLine(x,y,x,y);
+    }
+
+    @Override
+    public void scale(double scaleFactor) {
+        System.out.println("can't scale point");
     }
 
     @Override

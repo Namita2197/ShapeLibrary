@@ -48,6 +48,7 @@ public class EmbeddedImage implements Shape{
         return this.width*this.height;
     }
 
+    @Override
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         height=(int)(getHeight()*scaleFactor);

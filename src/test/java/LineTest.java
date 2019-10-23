@@ -148,7 +148,7 @@ public class LineTest {
         Point corner1 =new Point(10,15);
         Point corner2 =new Point(20,15);
         Line lineScaling=new Line(corner1,corner2);
-        lineScaling.scaleLine(2);
+        lineScaling.scale(2);
         assertEquals(40,lineScaling.getPoint2().getX(),0);
         assertEquals(30,lineScaling.getPoint2().getY(),0);
     }

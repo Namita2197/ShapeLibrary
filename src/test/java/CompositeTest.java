@@ -176,6 +176,38 @@ public class CompositeTest {
     }
 
     @Test
+    public void scaleTesting() throws Exception {
+        Point p1 =new Point(200,280);
+        Point p2 =new Point(240,280);
+        Point p3 =new Point(200,320);
+        Point p4 =new Point(240,320);
+        Point p5 =new Point(320,360);
+        Point p6 =new Point(350,380);
+        Point p7 =new Point(400,380);
+        Point p8 =new Point(350,440);
+
+        Circle circle = new Circle(p1, 50);
+        Rectangle rectangle = new Rectangle(p1, p2, p3, p4);
+        Triangle triangle = new Triangle(p6, p7, p8);
+        Line line = new Line(p4, p5);
+
+        EmbeddedImage embeddedImage = new EmbeddedImage("picture.jpg", 200, 200, 40, 40);
+
+        Composite compositeShape = new Composite();
+        compositeShape.appendShape(embeddedImage);
+        compositeShape.appendShape(triangle);
+        compositeShape.appendShape(rectangle);
+        compositeShape.appendShape(line);
+        compositeShape.appendShape(circle);
+        compositeShape.appendShape(p1);
+
+        compositeShape.scale(2);
+
+        assertEquals( 480,line.getPoint1().getX(),0.1);
+    }
+
+
+    @Test
     public void toStringTest() throws Exception{
         Point p1 =new Point(200,280);
         Point p2 =new Point(240,280);

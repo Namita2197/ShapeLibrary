@@ -70,6 +70,8 @@ public class Circle implements Shape{
      * @param deltaY            a delta change for the y-location of center of the circle
      * @throws ShapeException   Exception thrown if either the delta x or y are not valid doubles
      */
+
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         center.move(deltaX, deltaY);
     }
@@ -82,6 +84,8 @@ public class Circle implements Shape{
      *                          >1 to grow.
      * @throws ShapeException   Exception thrown if the scale factor is not valid
      */
+
+    @Override
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         radius *= scaleFactor;
@@ -90,10 +94,13 @@ public class Circle implements Shape{
     /**
      * @return  The area of the circle.
      */
+
+    @Override
     public double computeArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 
+    @Override
     public void render(Graphics2D graphics) {
 
        int diameter= (int)radius*2;

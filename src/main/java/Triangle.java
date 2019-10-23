@@ -39,12 +39,14 @@ public class Triangle implements Shape{
     public Point getCorner2() throws ShapeException { return corner2; }
     public Point getCorner3() throws ShapeException { return corner3; }
 
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         corner1.move(deltaX, deltaY);
         corner2.move(deltaX, deltaY);
         corner3.move(deltaX, deltaY);
     }
 
+    @Override
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         double y1=corner1.getY();
@@ -65,6 +67,7 @@ public class Triangle implements Shape{
         corner3.move(x3,y3);
     }
 
+    @Override
     public double computeArea() throws ShapeException {
         double x1 = corner1.getX();
         double x2 = corner2.getX();
@@ -88,6 +91,7 @@ public class Triangle implements Shape{
         assert lengthLine1+lengthLine2>lengthLine3;
     }
 
+    @Override
     public void render(Graphics2D graphics) throws ShapeException {
 
         int[] x = new int[4];

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02684fc3-29eb-4bee-a63b-55d4d0ad91bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InputOutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InputOutputStreamTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.InputOutputStreamTest.readWriteShape">
+  <component name="RunManager" selected="Gradle.Tests in 'ShapeLibrary.test'">
     <configuration name="CompositeTest.scaleTesting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,26 +151,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ShapeFactoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ShapeFactoryTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ShapeFactoryTest.testCreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -193,20 +171,40 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'ShapeLibrary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.ShapeFactoryTest.testCreate" />
-      <item itemvalue="Gradle.ShapeFactoryTest" />
       <item itemvalue="Gradle.CompositeTest.scaleTesting" />
       <item itemvalue="Gradle.PointTest.scaleTesting" />
       <item itemvalue="Gradle.InputOutputStreamTest.readWriteShape" />
+      <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
         <item itemvalue="Gradle.InputOutputStreamTest.readWriteShape" />
         <item itemvalue="Gradle.PointTest.scaleTesting" />
         <item itemvalue="Gradle.CompositeTest.scaleTesting" />
         <item itemvalue="Gradle.ShapeFactoryTest.testCreate" />
-        <item itemvalue="Gradle.ShapeFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +224,7 @@
       <workItem from="1571681290412" duration="30427000" />
       <workItem from="1571766383432" duration="16708000" />
       <workItem from="1571803036307" duration="9233000" />
-      <workItem from="1571854503752" duration="313000" />
+      <workItem from="1571854503752" duration="2149000" />
     </task>
     <servers />
   </component>

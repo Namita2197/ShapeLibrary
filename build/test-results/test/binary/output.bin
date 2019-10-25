@@ -1,30 +1,37 @@
-.Triangle 350.0,380.0,400.0,380.0,350.0,440.0
-Line240.0,320.0,320.0,360.0
-+embededimagepicture.jpg,10.0,10.0,200,200
-innerComposite : composite:2
-LinnerComposite : rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
-*innerComposite : circle:200.0,280.0,50.0
-;Rectangle 200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
-Circle 200.0,280.0,50.0
-
-Read Object from file: 
-Composite:4
-.Triangle:350.0,380.0,400.0,380.0,350.0,440.0
-Line:240.0,320.0,320.0,360.0
--EmbeddedImage:picture.jpg,10.0,10.0,200,200
-Composite:2
-;Rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
-Circle:200.0,280.0,50.0
-
-
-
-Expected Object from file: 
-Composite:4
-.Triangle:350.0,380.0,400.0,380.0,350.0,440.0
-Line:240.0,320.0,320.0,360.0
--EmbeddedImage:picture.jpg,10.0,10.0,200,200
-Composite:2
-;Rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
-Circle:200.0,280.0,50.0
-
-
+can't scale point
+5 Area of the composite shape is :12553.981633974483
+.Triangle 350.0,380.0,400.0,380.0,350.0,440.0
+Line240.0,320.0,320.0,360.0
++embededimagepicture.jpg,10.0,10.0,200,200
+innerComposite : composite:2
+LinnerComposite : rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
+*innerComposite : circle:200.0,280.0,50.0
+;Rectangle 200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
+Circle 200.0,280.0,50.0
+
+Read Object from file: 
+Composite:4
+.Triangle:350.0,380.0,400.0,380.0,350.0,440.0
+Line:240.0,320.0,320.0,360.0
+-EmbeddedImage:picture.jpg,10.0,10.0,200,200
+Composite:2
+;Rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
+Circle:200.0,280.0,50.0
+
+
+
+Expected Object from file: 
+Composite:4
+.Triangle:350.0,380.0,400.0,380.0,350.0,440.0
+Line:240.0,320.0,320.0,360.0
+-EmbeddedImage:picture.jpg,10.0,10.0,200,200
+Composite:2
+;Rectangle:200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
+Circle:200.0,280.0,50.0
+
+
+*0can't scale point
+?>.Triangle 350.0,380.0,400.0,380.0,350.0,440.0
+?>Circle 200.0,280.0,50.0
+?>Line240.0,320.0,320.0,360.0
+?>;Rectangle 200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0

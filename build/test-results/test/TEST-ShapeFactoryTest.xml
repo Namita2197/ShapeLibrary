@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ShapeFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T19:10:41" hostname="Namita" time="0.019">
+  <properties/>
+  <testcase name="testCreate" classname="ShapeFactoryTest" time="0.019"/>
+  <system-out><![CDATA[Triangle 350.0,380.0,400.0,380.0,350.0,440.0
+Circle 200.0,280.0,50.0
+Line240.0,320.0,320.0,360.0
+Rectangle 200.0,280.0,240.0,280.0,200.0,320.0,240.0,320.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

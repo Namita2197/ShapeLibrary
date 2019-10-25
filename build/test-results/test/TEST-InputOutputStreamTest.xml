@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InputOutputStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T06:30:29" hostname="Namita" time="0.207">
+<testsuite name="InputOutputStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T19:10:40" hostname="Namita" time="0.011">
   <properties/>
-  <testcase name="readWriteShape" classname="InputOutputStreamTest" time="0.207"/>
+  <testcase name="readWriteShape" classname="InputOutputStreamTest" time="0.011"/>
   <system-out><![CDATA[Triangle 350.0,380.0,400.0,380.0,350.0,440.0
 Line240.0,320.0,320.0,360.0
 embededimagepicture.jpg,10.0,10.0,200,200

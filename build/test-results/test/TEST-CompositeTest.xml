@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CompositeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-10-23T19:10:40" hostname="Namita" time="0.16">
+  <properties/>
+  <testcase name="moveTesting" classname="CompositeTest" time="0.004"/>
+  <testcase name="appendDeleteShapeTest" classname="CompositeTest" time="0.0"/>
+  <testcase name="toStringTest" classname="CompositeTest" time="0.057"/>
+  <testcase name="scaleTesting" classname="CompositeTest" time="0.004"/>
+  <testcase name="computeAreaTesting" classname="CompositeTest" time="0.0"/>
+  <testcase name="doubleCompositeTest" classname="CompositeTest" time="0.0"/>
+  <testcase name="renderTesting" classname="CompositeTest" time="0.093"/>
+  <system-out><![CDATA[can't scale point
+ Area of the composite shape is :12553.981633974483
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
